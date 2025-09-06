@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\geometry{margin=1in}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+\title{\textbf{Seminar Proposal: Deep Learning in Video Games with\\Reinforcement Learning, Procedural Content, and Visual Metrics}}
+\author{John Abraham Chandy \\ M.Sc. Computer Science with AI, Department of Computer Applications \\ Cochin University of Science and Technology}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This seminar explores the transformative role of deep learning in the video game industry. Key applications include reinforcement learning for intelligent agents, procedural content generation, and real-time behavior adaptation. Through a comparative analysis of recent research, including transformer-based agents, multi-agent systems, and adaptive gameplay personalization, the seminar outlines current advances, practical challenges, and future opportunities.
+\end{abstract}
+
+\section{Introduction}
+Video games have become a dynamic testing ground for artificial intelligence, particularly deep learning (DL). The growing computational power and data availability have enabled game developers and researchers to integrate sophisticated AI techniques such as reinforcement learning (RL), procedural generation, and large-scale multi-agent systems. This seminar presents a comparative study of recent innovations that leverage deep learning to advance the intelligence, realism, and adaptability of game environments.
+
+\section{Seminar Objectives}
+\begin{itemize}[noitemsep]
+    \item Review and analyze recent research papers on deep learning applications in video games.
+    \item Understand how RL and transformers are used in first-person shooter (FPS) and strategy games.
+    \item Explore DL techniques for procedural content generation and adaptive narrative.
+    \item Discuss personalization using real-time deep learning models.
+    \item Compare methods and identify limitations and future research directions.
+\end{itemize}
+
+\section{Recent Research Highlights}
+
+\subsection{1. Transformer-Based Reinforcement Learning}
+Batth et al. (2025) investigate the performance of Decision Transformers and DTQN in ViZDoom FPS gameplay \cite{batth2025fps}. Surprisingly, traditional DRL methods still outperform these transformer-based models in this context.
+
+\subsection{2. Multi-Agent Deep Reinforcement Learning (MADRL)}
+A comprehensive review \cite{madrl2025review} outlines the application of MADRL in RTS and MOBA games. Issues such as credit assignment, cooperation, and scalability are analyzed in detail.
+
+\subsection{3. Procedural Content and AI-Driven Narrative}
+DL models are now used to create levels, quests, and even dialogue trees. One study \cite{gameai2025} explains the use of LLMs and neural content generators in indie and AAA games alike.
+
+\subsection{4. SimBa for Real-Time Behavior}
+Sony AI introduced SimBa, a simplicity-biased architecture that enables real-time, scalable policy learning in games \cite{simba2025}. It shows promise in enhancing agent behavior in fast-paced environments.
+
+\subsection{5. Residual-MPPI for Adaptive Control}
+Residual-MPPI combines residual learning with model predictive control, enabling agents to adjust in real-time without retraining \cite{residualmppi2025}.
+
+\section{Comparative Analysis Table}
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{@{}p{3cm}p{5cm}p{6cm}@{}}
+\toprule
+\textbf{Aspect} & \textbf{DL Role} & \textbf{Benefits / Challenges} \\
+\midrule
+FPS Agents (ViZDoom) & Transformers (DTQN, Decision Transformers) & Models sequences, but underperforms vs DRL \cite{batth2025fps} \\
+Multi-Agent Learning & MADRL across RTS/MOBA & Enables coordination; credit assignment is complex \cite{madrl2025review} \\
+Procedural Content & DL/LLMs for level, story gen & Improves replayability; needs quality control \cite{gameai2025} \\
+Real-Time Behavior & SimBa architecture & Real-time scalable agent policy learning \cite{simba2025} \\
+Adaptive Control & Residual-MPPI & Real-time adaptation without retraining \cite{residualmppi2025} \\
+\bottomrule
+\end{tabular}
+\caption{Comparative Summary of Deep Learning Techniques in Games}
+\end{table}
+
+\section{Conclusion}
+Deep learning has significantly enhanced the capabilities of video game AI. While models like Decision Transformers show promise, traditional DRL remains strong in FPS environments. Procedural content generation and personalization through models like SimBa and Residual-MPPI reflect the shift toward player-centric design. Future work must address efficiency, ethical constraints, and generalizability across genres and platforms.
+
+
+
+\begin{thebibliography}{9}
+
+\bibitem{batth2025fps}
+Batth, S., Sethi, H., Shariff, Z., Shi, J., Patel, R. (2025). 
+\textit{Do We Need Transformers to Play FPS Video Games?} 
+arXiv preprint \href{https://arxiv.org/abs/2504.17891}{arXiv:2504.17891}.
+
+\bibitem{madrl2025review}
+Wang, T., et al. (2025). 
+\textit{Intelligent games meeting with multi-agent deep reinforcement learning: a comprehensive review}. 
+Artificial Intelligence Review. \href{https://link.springer.com/article/10.1007/s10462-025-11166-1}{DOI: 10.1007/s10462-025-11166-1}.
+
+\bibitem{gameai2025}
+Li, X., et al. (2025). 
+\textit{The Exploring of AI Applications in Game Development}. 
+Applied and Computational Engineering. 
+\href{https://www.researchgate.net/publication/391984191}{ResearchGate}.
+
+\bibitem{simba2025}
+Sony AI (2025). 
+\textit{SimBa: Simplicity Bias for Real-Time Game Agents}. 
+Retrieved from \href{https://ai.sony/blog/Sony-AI-at-ICLR-2025-Refining-Diffusion-Models-Reinforcement-Learning-and-AI-Personalization}{Sony AI Blog}.
+
+\bibitem{residualmppi2025}
+Sony AI (2025). 
+\textit{Residual-MPPI: Hybrid Control for Personalized Game AI}. 
+Presented at ICLR 2025. 
+\href{https://ai.sony/blog/Sony-AI-at-ICLR-2025-Refining-Diffusion-Models-Reinforcement-Learning-and-AI-Personalization}{Sony AI Blog}.
+
+\end{thebibliography}
+
+\end{document}
